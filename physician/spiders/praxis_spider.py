@@ -7,7 +7,7 @@ class PhysicianSpiderSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        archive =  response.xpath('//ul[@class="archive-list"]/li/a/@href').extract()   # 384 darab hét
+        archive =  response.xpath('//ul[@class="archive-list"]/li/a/@href').extract() 
         for het in archive:
         	yield scrapy.Request(url=het, callback=self.parse_hetek)
 
