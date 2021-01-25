@@ -1,1 +1,1 @@
-# Scraping healthcare-related writings website
+# Scraping healthcare-related writings of patients and their relatives
